@@ -1,0 +1,72 @@
+# [Tutorial title: "Build your first X" or "Get started with Y"]
+
+[One sentence: what the reader will have built or accomplished by the end of this tutorial.]
+
+**Time:** [Estimated time to complete]  
+**Difficulty:** [Beginner / Intermediate / Advanced]
+
+---
+
+## Prerequisites
+
+Before you begin, make sure you have:
+
+- [Prerequisite 1]
+- [Prerequisite 2]
+- [Link to setup guide if needed]
+
+---
+
+## What you'll build
+
+[1–3 sentences describing the end state. If there's a screenshot or diagram of the finished result, include it here.]
+
+---
+
+## Step 1: [Action verb + what you're doing]
+
+[Brief context sentence if needed — what this step accomplishes and why.]
+
+[Instruction.]
+
+```[language]
+[Code example]
+```
+
+[Expected output or confirmation of success:]
+
+```
+[Output]
+```
+
+---
+
+## Step 2: [Action verb + what you're doing]
+
+[Instruction.]
+
+```[language]
+[Code example]
+```
+
+> **Note:** [Include a note here if there's a common mistake or variation worth flagging.]
+
+---
+
+## Step 3: [Action verb + what you're doing]
+
+[Instruction.]
+
+---
+
+## What you built
+
+[2–3 sentences summarizing what the reader accomplished and what the code is now doing.]
+
+---
+
+## Next steps
+
+- [Related tutorial or guide]
+- [Advanced variation of what they just built]
+- [Reference doc for the API or feature they used]
