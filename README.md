@@ -2,7 +2,7 @@
 
 A practical style guide for developer-facing technical documentation — API references, SDK guides, tutorials, and platform documentation.
 
-This guide reflects the principles I've used to build and maintain documentation systems at scale, including the style standards I authored at Meta's Reality Labs that became the automated baseline for all developer documentation submissions.
+This guide reflects the principles I've used to build and maintain documentation systems at scale, including the style standards I authored that became the automated baseline for all developer documentation submissions.
 
 ---
 
