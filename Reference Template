@@ -1,0 +1,73 @@
+# [API / CLI / Config] Reference: [Name]
+
+[One sentence: what this thing is and what it does.]
+
+---
+
+## Syntax
+
+```[language]
+[function/command signature with all parameters shown]
+```
+
+---
+
+## Parameters
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `param_name` | `string` | Yes | [What it is and what values are valid] |
+| `param_name` | `integer` | No | [What it is. Default: `value`] |
+| `param_name` | `boolean` | No | [What it controls. Default: `false`] |
+
+---
+
+## Returns
+
+[What the function or command returns. Include the type and shape.]
+
+```[language]
+// Example return value
+{
+  "field": "value",
+  "field": 0
+}
+```
+
+| Field | Type | Description |
+|---|---|---|
+| `field` | `string` | [What this field contains] |
+| `field` | `integer` | [What this field represents] |
+
+---
+
+## Errors
+
+| Code / Error | Cause | Resolution |
+|---|---|---|
+| `400 Bad Request` | [What triggers this] | [How to fix it] |
+| `401 Unauthorized` | [What triggers this] | [How to fix it] |
+| `[ErrorName]` | [What triggers this] | [How to fix it] |
+
+---
+
+## Examples
+
+### [Basic use case]
+
+```[language]
+[Minimal working example]
+```
+
+### [Common variation or advanced use case]
+
+```[language]
+[Example]
+```
+
+---
+
+## Related
+
+- [Link to tutorial that uses this]
+- [Link to related reference doc]
