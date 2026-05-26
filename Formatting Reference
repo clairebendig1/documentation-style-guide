@@ -1,0 +1,141 @@
+# Formatting Reference
+
+Quick reference for structural patterns. Use these consistently so readers can navigate by shape.
+
+---
+
+## Page structure
+
+Every documentation page should have:
+
+1. **Title** (H1) — what the page is about, in plain terms
+2. **One-sentence description** — what this thing does or what this page covers
+3. **Prerequisites** (if applicable) — what the reader needs before starting
+4. **Body** — the actual content
+5. **Next steps or related links** (if applicable)
+
+Don't bury the point. If a reader lands on a page and can't tell what it's for in 10 seconds, the page needs restructuring.
+
+---
+
+## Doc types and when to use them
+
+| Type | Use when | Template |
+|---|---|---|
+| Tutorial | Reader needs to learn by doing — guided, outcome-oriented | [tutorial-template.md](templates/tutorial-template.md) |
+| How-to guide | Reader knows what they want to do and needs steps | [how-to-template.md](templates/how-to-template.md) |
+| Reference | Reader needs to look something up (API, config, CLI flags) | [reference-template.md](templates/reference-template.md) |
+| Explanation | Reader needs to understand why something works the way it does | No template — use prose |
+
+Don't mix types in one page. If a how-to starts explaining the underlying architecture for several paragraphs, that explanation belongs in a separate doc.
+
+---
+
+## Headings
+
+Use headings to give pages a scannable skeleton — not to decorate prose.
+
+```
+# Page title (H1) — one per page
+## Major section (H2)
+### Sub-section (H3)
+#### Rarely needed (H4) — if you're using H4 often, reconsider your structure
+```
+
+**Heading text:** Descriptive, not clever. "Authentication" tells the reader where they are. "The key to keeping things secure" does not.
+
+---
+
+## Code blocks
+
+Always specify the language:
+
+````
+```python
+def get_token(api_key: str) -> str:
+    return requests.post(AUTH_URL, headers={"key": api_key}).json()["token"]
+```
+````
+
+For terminal commands, use `bash` or `shell`:
+
+````
+```bash
+curl -X POST https://api.example.com/auth \
+  -H "Content-Type: application/json" \
+  -d '{"api_key": "your_key_here"}'
+```
+````
+
+For output or responses the reader should expect, use a comment or label:
+
+````
+```json
+// Response
+{
+  "token": "eyJhbGci...",
+  "expires_in": 3600
+}
+```
+````
+
+---
+
+## Callouts
+
+Use callouts sparingly — they lose impact when overused.
+
+| Type | Use for |
+|---|---|
+| `> **Note:**` | Information the reader should know but won't lose work over missing |
+| `> **Important:**` | Information that affects whether the task works |
+| `> **Warning:**` | Information about irreversible actions or data loss |
+
+Don't use callouts to hold information that belongs in the main text. If something is important enough to say, say it in the prose.
+
+---
+
+## Tables
+
+Use tables for genuinely comparative or lookup information — not for anything that reads naturally as prose.
+
+Good table candidates: API parameters, config options, error codes, feature comparisons.
+
+Bad table candidates: "Here are three reasons we built this" — that's a list.
+
+Every table needs a header row. Keep column headers short and descriptive.
+
+---
+
+## Links
+
+**Inline links** for references within running text:
+
+> See [Authentication](../auth/overview.md) for token setup.
+
+**Reference-style links** when the URL is long or used multiple times — keeps the prose readable.
+
+**Link text rules:**
+- Describe the destination, not the action: "the authentication guide" not "click here"
+- Don't use the raw URL as link text unless the URL itself is the information (e.g., showing what endpoint to call)
+- Links should make sense out of context — screen readers often navigate by link text alone
+
+---
+
+## Images and diagrams
+
+Every image needs alt text. Write alt text that describes what the image *shows*, not what it *is*:
+
+```markdown
+![A flowchart showing three steps: request, authenticate, respond](auth-flow.png)
+```
+
+not:
+
+```markdown
+![Auth flow diagram](auth-flow.png)
+```
+
+If an image is purely decorative (a logo, a decorative divider), use empty alt text: `alt=""`.
+
+For complex diagrams (architecture charts, multi-step flows), include a text description below the image. Don't make the diagram the only way to understand the concept.
