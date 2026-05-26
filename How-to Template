@@ -1,0 +1,64 @@
+# How to [accomplish a specific goal]
+
+[One sentence: what this guide helps the reader do, and in what context.]
+
+---
+
+## Prerequisites
+
+- [What the reader needs to have set up or know before starting]
+
+---
+
+## [Step 1: Action verb + what]
+
+[Instruction. One action per step.]
+
+```[language]
+[Code or command]
+```
+
+---
+
+## [Step 2: Action verb + what]
+
+[Instruction.]
+
+> **Important:** [Flag anything that will break the process or requires extra care.]
+
+---
+
+## [Step 3: Action verb + what]
+
+[Instruction.]
+
+---
+
+## Verify [the outcome]
+
+[Tell the reader how to confirm the task succeeded — what to look for, what command to run, what the response should be.]
+
+```[language]
+[Verification command or check]
+```
+
+Expected output:
+
+```
+[What success looks like]
+```
+
+---
+
+## Troubleshooting
+
+| Problem | Likely cause | Fix |
+|---|---|---|
+| [Error message or symptom] | [What usually causes this] | [What to do] |
+| [Error message or symptom] | [What usually causes this] | [What to do] |
+
+---
+
+## Related
+
+- [Link to related how-to or reference]
